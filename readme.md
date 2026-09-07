@@ -13,11 +13,9 @@
 
 ---
 
-Desenvolvedor em Brasília. Construo sistemas que integram modelos de linguagem a operações reais de negócio — não protótipos, mas coisas que precisam ficar de pé.
+Desenvolvedor em Brasília. Construo sistemas com modelos de linguagem que rodam em produção e atendem cliente de verdade.
 
-Fundei a **[Riacho Tech](https://riachotech.com.br/)**, onde desenvolvi e opero uma assistente de IA multi-tenant que atende pelo WhatsApp com a API oficial da Meta: ela conversa, consulta a agenda real no Google Calendar, marca e cancela horários e cobra por Pix. Está em produção desde agosto de 2026, numa VPS própria, atendendo negócio real. Do zero: arquitetura, código, infraestrutura e operação.
-
-Duas partes dela dizem melhor o tipo de problema que me interessa. Uma é o modo **Coexistence** da plataforma da Meta: a dona da clínica continua respondendo pelo aplicativo dela e a assistente responde no mesmo número — duas vozes do mesmo lado da conversa, e o sistema precisa saber de quem é cada linha antes de decidir se pode agendar. A outra é como se verifica uma coisa dessas: resposta de modelo não tem igualdade, então a avaliação julga pelo efeito no banco em vez do texto, e cada cenário carrega um teto de custo medido — 2× o máximo observado em execuções repetidas, não um número escolhido no olho.
+Fundei a **[Riacho Tech](https://riachotech.com.br/)**, onde fiz e opero uma assistente que atende pelo WhatsApp: conversa com o cliente, consulta a agenda no Google Calendar, marca e cancela horários e cobra por Pix. Está no ar desde agosto de 2026, numa VPS própria. A arquitetura, o código e a infraestrutura são meus — e é comigo quando quebra.
 
 ### Stack
 
@@ -28,13 +26,13 @@ Duas partes dela dizem melhor o tipo de problema que me interessa. Uma é o modo
 ### Repositórios
 
 **[sofia-vitrine](https://github.com/andrenv14/sofia-vitrine)**
-Estudo de caso técnico da plataforma acima: arquitetura, decisões de projeto e os trechos de código que as sustentam. O código de produção é privado — este repositório é de leitura.
+Como a assistente funciona por dentro: a arquitetura, as decisões que importaram e os trechos de código que as sustentam. O código de produção é privado; aqui é para ler.
 
 **[sofia-eval](https://github.com/andrenv14/sofia-eval)**
-Avaliação de comportamento de LLM para a plataforma acima. Testa a decisão do modelo, não o código: ataca o sistema por HTTP e julga pelo efeito no banco. Cenários em YAML, Python.
+Testa se o modelo decide certo, e não se o código roda. Monta a mensagem que a Meta enviaria, ataca o sistema por HTTP e vai conferir o resultado no banco. Cenários em YAML, Python.
 
 **[riachotech-site](https://github.com/andrenv14/riachotech-site)**
-O site da Riacho Tech e o processo por trás dele: sistema de design extraído do CSS em vez de imaginado, medição de contraste, tipografia e deslocamento de layout em três larguras, e a prova de que um restyle não mexeu numa palavra do conteúdo.
+O site da Riacho Tech. Estático, sem build no servidor. O sistema de design saiu do CSS, e nenhuma página vai ao ar sem ser medida.
 
 ### Formação
 
