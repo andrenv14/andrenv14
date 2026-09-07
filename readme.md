@@ -34,6 +34,9 @@ Testa se o modelo decide certo, e não se o código roda. Monta a mensagem que a
 **[riachotech-site](https://github.com/andrenv14/riachotech-site)**
 O site da Riacho Tech. Estático, sem build no servidor. O sistema de design saiu do CSS, e nenhuma página vai ao ar sem ser medida.
 
+**[sofia-agents](https://github.com/andrenv14/sofia-agents)**
+Como eu construo isso tudo dirigindo agentes de IA: quem faz o quê, quem revisa quem, e as regras que toda sessão lê antes de tocar no código. Os arquivos são os que estão em uso.
+
 ### Formação
 
 Engenharia de Software e Ciências Econômicas — Universidade Católica de Brasília.
