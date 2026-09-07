@@ -27,9 +27,6 @@ Fundei a **[Riacho Tech](https://riachotech.com.br/)**, onde desenvolvi uma assi
 **[sofia-vitrine](https://github.com/andrenv14/sofia-vitrine)**
 Estudo de caso técnico da plataforma acima: arquitetura, decisões de projeto e os trechos de código que as sustentam. O código de produção é privado — este repositório é de leitura.
 
-**[analise-xadrez](https://github.com/andrenv14/analise-xadrez)** · [ver no ar](https://analise-xadrez.netlify.app)
-Analisador de partidas que roda inteiro no navegador, sem back-end. Stockfish compilado em WebAssembly dentro de um *Web Worker*, classificação de lances e exploração de variantes.
-
 **[sofia-eval](https://github.com/andrenv14/sofia-eval)**
 Avaliação de comportamento de LLM para a plataforma acima. Testa a decisão do modelo, não o código: ataca o sistema por HTTP e julga pelo efeito no banco. Cenários em YAML, Python.
 
