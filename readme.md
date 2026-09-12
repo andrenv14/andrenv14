@@ -13,7 +13,7 @@
 
 ---
 
-Desenvolvedor em Brasília. Construo sistemas com modelos de linguagem que rodam em produção e atendem cliente de verdade.
+Desenvolvedor em Brasília. Construo sistemas com modelos de linguagem que rodam em produção e atendem cliente pagante.
 
 Fundei a **[Riacho Tech](https://riachotech.com.br/)**, onde fiz e opero uma assistente que atende pelo WhatsApp: conversa com o cliente, consulta a agenda no Google Calendar, marca e cancela horários e cobra por Pix. Está no ar desde agosto de 2026, numa VPS própria. A arquitetura, o código e a infraestrutura são meus — e é comigo quando quebra.
 
@@ -26,16 +26,16 @@ Fundei a **[Riacho Tech](https://riachotech.com.br/)**, onde fiz e opero uma ass
 ### Repositórios
 
 **[sofia-vitrine](https://github.com/andrenv14/sofia-vitrine)**
-Como a assistente funciona por dentro: a arquitetura, as decisões que importaram e os trechos de código que as sustentam. O código de produção é privado; aqui é para ler.
+Como a assistente funciona por dentro: por que a trava de agendamento é um índice único, por que o servidor responde à Meta antes de processar, e o código que sustenta cada uma. O de produção é privado; aqui é para ler.
 
 **[sofia-eval](https://github.com/andrenv14/sofia-eval)**
 Testa se o modelo decide certo, e não se o código roda. Monta a mensagem que a Meta enviaria, ataca o sistema por HTTP e vai conferir o resultado no banco. Cenários em YAML, Python.
 
 **[riachotech-site](https://github.com/andrenv14/riachotech-site)**
-O site da Riacho Tech. Estático, sem build no servidor. O sistema de design saiu do CSS, e nenhuma página vai ao ar sem ser medida.
+O site da Riacho Tech. Estático, sem build no servidor. Nenhuma página vai ao ar sem passar por um script que mede contraste, tamanho de texto e alvo de toque em três larguras.
 
 **[sofia-agents](https://github.com/andrenv14/sofia-agents)**
-Como eu construo isso tudo dirigindo agentes de IA: quem faz o quê, quem revisa quem, e as regras que toda sessão lê antes de tocar no código. Os arquivos são os que estão em uso.
+O processo de engenharia por trás dos outros três: quem revisa quem, o que precisa ser provado antes de um merge, e as regras que o sistema aplica sozinho. O código é escrito por agentes de IA — o repositório é sobre o que existe em volta deles. Os arquivos são os que estão em uso.
 
 ### Formação
 
